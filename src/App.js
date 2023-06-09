@@ -6,7 +6,7 @@ import {
   add_todo,
   delete_todo,
 } from "./rtk/toolkitReducer";
-import { fetchCustomers } from "./asyncAction/fetchCustomers";
+import { fetchTodos } from "./asyncAction/fetchTodos";
 
 function App() {
   const dispatch = useDispatch();
@@ -40,7 +40,7 @@ function App() {
         </button>
         <button
           className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-2 rounded mt-5 ml-2"
-          onClick={() => dispatch(fetchCustomers())}
+          onClick={() => dispatch(fetchTodos())}
         >
           Получить клиентов
         </button>

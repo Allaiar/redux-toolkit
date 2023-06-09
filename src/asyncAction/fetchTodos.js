@@ -1,4 +1,4 @@
-export const fetchCustomers = () => {
+export const fetchTodos = () => {
   return function (dispatch) {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
